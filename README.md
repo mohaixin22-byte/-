@@ -47,7 +47,7 @@
 
 相对 v0.5 的完整变更记录。
 
-👉 [点击打开工具 v0.8](https://mohaixin22-byte.github.io/-/)
+👉 https://mohaixin22-byte.github.io/-/
 
 ### 新增功能
 
