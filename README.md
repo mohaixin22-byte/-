@@ -2,12 +2,6 @@
 
 文献速递制作工具（Design by mohaixin22），支持从期刊目录页一键提取文章、批量翻译、格式化输出。
 
-## 在线使用
-
-👉 [点击打开工具]( https://mohaixin22-byte.github.io/-/)
-
-> 也可下载 `index.html` 到本地，用 Chrome / Edge 打开直接使用，无需安装任何软件。
-
 ## 功能介绍
 ① 期刊配置：选择目标期刊（JAMS / JM / JMR / JCR / MS / PM / MISQ / JCP / ISR），填写卷期信息和采编团队。
 
@@ -51,7 +45,7 @@
 
 ## 文献速递工作台 v0.8 更新说明
 
-👉 [点击打开工具 v0.8](https://mohaixin22-byte.github.io/-/文献速递工作台.html)
+👉 [点击打开工具 v0.8]
 
 相对 v0.5 的完整变更记录。
 
