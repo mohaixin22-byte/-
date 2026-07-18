@@ -35,6 +35,19 @@
 
 > **为什么分两类？** 部分出版商（如 INFORMS）在元数据库里存的是简版摘要，工具会自动识别并回官网抓取学术原摘要，保证翻译质量。
 
+路径期刊手段特点Crossref直取PM/JCP/JCR/JAMS/MISQ读 API 的 abstract 字段秒级、零反爬回官网穿透JM/JMR/MS/ISR Jina Reader 代理 + 双模式解析抓原摘要、需重试
+三道墙的破解：
+
+CORS → Crossref 全放行、Jina 带 Origin 动态放行,浏览器可直接 fetch
+反爬 → Jina Reader 穿透 Cloudflare
+付费墙 → 只抓公开摘要+元数据,不碰全文
+
+关键踩坑
+
+Crossref 必须 sort=published&order=desc,否则新刊取不到
+SAGE/INFORMS 的 markdown 取 ## Abstract 后第一段才是纯摘要(否则连上引言)
+INFORMS 偶发验证码 → 双模式(markdown+HTML)互补 + 重试 + 篇间延迟
+
 **使用提示**
 - 抓取会**替换**当前文章列表，请在录入前操作
 - 最新一期若抓不全，可能是数据库尚未收录（新刊常见），可稍后重试或用书签 / 手动方式补充
